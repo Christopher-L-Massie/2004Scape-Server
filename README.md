@@ -1,3 +1,6 @@
+⚠️ This is a fork of the [official 2004scape project](https://github.com/LostCityRS/Server).
+For custom additions and usage instructions for this version, see [FORK.md](FORK.md).
+
 <div align="center">
     <h1>Lost City</h1>
 </div>
