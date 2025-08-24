@@ -5,14 +5,14 @@ import { ExitPromptError } from '@inquirer/core';
 import { confirm, input, number, password, select } from '@inquirer/prompts';
 
 // if you're forking this feel free to change these :) it does make some assumptions elsewhere (branch names)
-const repoOrg = 'https://github.com/LostCityRS';
-const engineRepo = 'Engine-TS';
-const contentRepo = 'Content';
-const webRepo = 'Client-TS';
-const javaRepo = 'Client-Java';
+const repoOrg = 'https://github.com/Christopher-L-Massie';
+const engineRepo = '2004Scape-Engine-TS';
+const contentRepo = '2004Scape-Content';
+const webRepo = '2004Scape-Client-TS';
+const javaRepo = '2004Scape-Client-Java';
 
 function cloneRepo(repo: string, dir: string, branch: string) {
-    child_process.execSync(`git clone ${repoOrg}/${repo} --single-branch -b ${branch} ${dir}`, {
+    child_process.execSync(`git clone ${repoOrg}/${repo} -b ${branch} ${dir}`, {
         stdio: 'inherit'
     });
 }
